@@ -1,11 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    agent { label 'master' }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
-                sh 'vi gagan.py'
-                
+                echo "Hello World!"
             }
         }
     }
