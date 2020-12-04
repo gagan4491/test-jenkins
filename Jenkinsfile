@@ -6,7 +6,7 @@ pipeline {
                 echo "Hello World!"
                 
            
-           sh "$pwd"
+          
             
          
     }
