@@ -5,10 +5,10 @@ pipeline {
             steps {
                 echo "Hello World!"
                  sh '''
-            #!/bin/bash
+           
            sh "$pwd"
             
-         '''
+         
     }
             }
         }
