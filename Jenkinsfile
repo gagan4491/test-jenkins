@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Hello World!"
                 sh "$pwd"
-                echo'$env'
+                sh "echo "gagan"
                 
            
           
