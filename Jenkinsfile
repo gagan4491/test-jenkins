@@ -4,7 +4,12 @@ pipeline {
         stage('build') {
             steps {
                 echo "Hello World!"
-                echo "$env"
+                 sh '''
+            #!/bin/bash
+            $env
+            
+         '''
+    }
             }
         }
     }
