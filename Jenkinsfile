@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Hello World!"
                 sh "$pwd"
-                sh "$env"
+                sh 'printenv'
                 
            
           
