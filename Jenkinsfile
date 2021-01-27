@@ -6,6 +6,7 @@ pipeline {
                 echo "Hello World!"
                 sh 'printenv'
                 sh 'pwd'
+                echo "test"
                 
         }
     }
