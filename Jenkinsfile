@@ -13,7 +13,7 @@ pipeline {
 
         stage('build') {
             steps {
-                echo "Hello World!"
+                echo "Hello World!guys"
                 sh 'printenv'
                 sh 'pwd'
                 echo "test3ef3     done"
