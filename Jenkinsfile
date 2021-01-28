@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'master' }
     stages {
-        stage('Build') {
+        stage('pre build') {
             steps {
                 // Clean before build
                 cleanWs()
@@ -16,7 +16,7 @@ pipeline {
                 echo "Hello World!guys"
                 sh 'printenv'
                 sh 'pwd'
-                echo "done 1"
+                echo "done "
                 
         }
     }
