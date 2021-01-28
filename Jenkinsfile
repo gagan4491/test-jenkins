@@ -16,7 +16,7 @@ pipeline {
                 echo "Hello World!guys"
                 sh 'printenv'
                 sh 'pwd'
-                echo "test3ef3     done"
+                echo "done 1"
                 
         }
     }
