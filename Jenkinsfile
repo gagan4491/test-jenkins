@@ -9,7 +9,14 @@ pipeline {
                 checkout scm
                 echo "Building ${env.JOB_NAME}..."
             }
+
         }
+
+       stage('clone') {
+            dir('CalibrationResults') {
+            git url: 'https://github.com/gagan4491/test-jenkins.git'
+    }
+    }
 
         stage('build') {
             steps {
