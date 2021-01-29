@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'master' }
     stages {
-        stage('Build') {
+        stage('pre build') {
             steps {
                 // Clean before build
                 cleanWs()
@@ -9,14 +9,21 @@ pipeline {
                 checkout scm
                 echo "Building ${env.JOB_NAME}..."
             }
+
         }
+
+       stage('clone') {
+            dir('CalibrationResults') {
+            git url: 'https://github.com/gagan4491/test-jenkins.git'
+    }
+    }
 
         stage('build') {
             steps {
                 echo "Hello World!guys"
                 sh 'printenv'
                 sh 'pwd'
-                echo "done 1"
+                echo "done "
                 
         }
     }
