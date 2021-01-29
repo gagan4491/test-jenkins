@@ -14,15 +14,15 @@ pipeline {
 
         }
 
-     stage('cloning second repo ') {
+        stage('cloning second repo ') {
             steps {
                 echo 'Make the output directory'
                 sh 'mkdir -p testdir'
                 dir('testdir') {
                 git branch: 'main', credentialsId: '91f5e3a6-48b2-4204-a476-96b771afaef3', url: 'https://github.com/gagan4491/test-jenkins.git'
-      }
-        }
-    }
+            }
+            }
+         }
 
         stage('build') {
             steps {
