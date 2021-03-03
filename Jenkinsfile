@@ -3,9 +3,7 @@ pipeline {
     
      parameters {
      
-     booleanParam(name: 'bakk',
-      defaultValue: false,
-      description: 'Checkbox parameter')
+  properties([parameters([extendedChoice(description: 'Team ', multiSelectDelimiter: ',', name: 'WUBS', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_CHECKBOX', visibleItemCount: 5)])])
   }
     stages {
                 stage('build') {
