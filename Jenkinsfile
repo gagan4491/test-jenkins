@@ -2,7 +2,7 @@
 
 pipeline {
     agent { label 'master' }
-    properties([parameters([booleanParam(defaultValue: true, description: 'hello', name: 'gagan'), choice(choices: ['aaa , b ,  c '], description: 'd', name: 'choice'), run(description: 'df', filter: 'ALL', name: 'dfds', projectName: 'fds')])])
+    options([parameters([booleanParam(defaultValue: true, description: 'hello', name: 'gagan'), choice(choices: ['aaa , b ,  c '], description: 'd', name: 'choice'), run(description: 'df', filter: 'ALL', name: 'dfds', projectName: 'fds')])])
     stages {
         stage('pre build') {
             steps {
