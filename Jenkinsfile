@@ -1,8 +1,6 @@
 pipeline {
     agent { label 'master' }
     
-    
-    options([gitLabConnection(''), [$class: 'GitlabLogoProperty', repositoryName: ''], parameters([[$class: 'ChoiceParameter', choiceType: 'PT_CHECKBOX', description: '', filterLength: 1, filterable: false, name: 'AWS', randomName: 'choice-parameter-27110276705450000']]), [$class: 'JobLocalConfiguration', changeReasonComment: '']]) 
      parameters {
      
      booleanParam(name: 'bakk',
