@@ -11,7 +11,7 @@ pipeline {
                 stage('build') {
             steps {
                 echo "We can bakk: ${params.bakk}"
-                "(params.bakk}"
+                $(params.bakk}
                 script {
                     if (bakk =='true') {
                 echo 'I only execute on the master branch'
