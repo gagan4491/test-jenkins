@@ -17,6 +17,11 @@ pipeline {
                 echo "done "
                 echo "We can dance: ${params.CAN_DANCE}"
                  echo "We can bakk: ${params.bakk}"
+                if ( ${params.bakk}) {
+                echo 'I only execute on the master branch'
+                } else {
+                echo 'I execute elsewhere'
+        }
                 
                 
         }
