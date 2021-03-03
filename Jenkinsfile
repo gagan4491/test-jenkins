@@ -15,6 +15,9 @@ pipeline {
                 sh 'printenv'
                 sh 'pwd'
                 echo "done "
+                echo "We can dance: ${params.CAN_DANCE}"
+                 echo "We can bakk: ${params.bakk}"
+                
                 
         }
     }
