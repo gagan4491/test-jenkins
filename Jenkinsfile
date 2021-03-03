@@ -2,10 +2,10 @@ pipeline {
     agent { label 'master' }
      parameters {
      booleanParam(name: 'CAN_DANCE',
-      defaultValue: true,
+      defaultValue: false,
       description: 'Checkbox parameter')
      booleanParam(name: 'bakk',
-      defaultValue: true,
+      defaultValue: false,
       description: 'Checkbox parameter')
   }
     stages {
