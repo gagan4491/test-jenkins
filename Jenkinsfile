@@ -1,12 +1,14 @@
 pipeline {
     agent { label 'master' }
     
-     parameters {
+     //parameters {
      
-     booleanParam(name: 'bakk',
-      defaultValue: false,
-      description: 'Checkbox parameter')
-  }
+     //booleanParam(name: 'bakk',
+     // defaultValue: false,
+      //description: 'Checkbox parameter')
+    properties([parameters([booleanParam(defaultValue: false, description: 'Checkbox parameter', name: 'bakk')])])    
+         
+  }//
     stages {
                 stage('build') {
             steps {
