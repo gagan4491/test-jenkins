@@ -2,7 +2,7 @@ pipeline {
     agent { label 'master' }
     
      parameters {
-     ( extendedChoice(description: 'Team ', multiSelectDelimiter: ',', name: 'WUBS', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_CHECKBOX',value: 'AWS Masspay', value: 'AWS Masspayeee',visibleItemCount: 5))
+     ( extendedChoice(description: 'Team ', multiSelectDelimiter: ',', name: 'WUBS', quoteValue: false, saveJSONParameterToFile: false, type: 'PT_CHECKBOX',value: 'AWS Masspay','AWS Masspayeee',visibleItemCount: 5))
   }
     stages {
                 stage('build') {
