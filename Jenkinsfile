@@ -18,7 +18,7 @@ pipeline {
                 echo "We can dance: ${params.CAN_DANCE}"
                  echo "We can bakk: ${params.bakk}"
                 script {
-                    if (env.{params.bakk} =='true') {
+                    if (booleanParam =='true') {
                 echo 'I only execute on the master branch'
                 } else {
                 echo 'I execute elsewhere'
