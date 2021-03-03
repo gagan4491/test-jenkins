@@ -6,7 +6,7 @@ pipeline {
      //booleanParam(name: 'bakk',
      // defaultValue: false,
       //description: 'Checkbox parameter')
-    properties([parameters([booleanParam(defaultValue: false, description: 'Checkbox parameter', name: 'bakk')])])    
+    options([parameters([booleanParam(defaultValue: false, description: 'Checkbox parameter', name: 'bakk')])])    
          
   //}
     stages {
