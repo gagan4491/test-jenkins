@@ -13,7 +13,7 @@ pipeline {
 	    
 	    {
 		   git https://github.com/gagan4491/test-jenkins.git 
-	}
+	
 		    
                stage('pre build') {
             steps {
