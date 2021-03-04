@@ -7,7 +7,9 @@ pipeline {
     stages {	
 	    
 	    stage('echo') {
-		echo "${params.Masspay-DEV}"    
+		    steps {	    
+		    
+			    echo "${params.Masspay-DEV}"  }    
 	    }
 	    
                stage('build') {
