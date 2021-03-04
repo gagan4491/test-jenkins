@@ -9,7 +9,8 @@ pipeline {
 	    stage('echo') {
 		    steps {	    
 		    
-			   // echo "${params.Masspay-DEV}"  }    
+			   // echo "${params.Masspay-DEV}" 
+		    }    
 	    }
 	    
                stage('build') {
