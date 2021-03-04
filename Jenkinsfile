@@ -8,6 +8,13 @@ pipeline {
          
     // }
     stages {
+	    
+	    stage ('Clone')
+	    
+	    {
+		   git clone https://github.com/gagan4491/test-jenkins.git 
+	}
+		    
                stage('pre build') {
             steps {
                 cleanWs()
