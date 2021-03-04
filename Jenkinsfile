@@ -3,7 +3,7 @@ pipeline {
     
      parameters {
          
-   ([extendedChoice(description: 'Test Suites', multiSelectDelimiter: ',', name: 'Masspay', quoteValue: false, type: 'PT_CHECKBOX', visibleItemCount: 5)])     
+   //([extendedChoice(description: 'Test Suites', multiSelectDelimiter: ',', name: 'Masspay', quoteValue: false, type: 'PT_CHECKBOX', visibleItemCount: 5)])     
          
          
      }
