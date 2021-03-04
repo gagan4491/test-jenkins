@@ -8,7 +8,7 @@ pipeline {
 	    
 	    stage('echo') {
 		    steps {	    
-		    
+		             echo "Hello World"
 			   // echo "${params.Masspay-DEV}" 
 		    }    
 	    }
