@@ -7,6 +7,15 @@ pipeline {
          
          
      }
+    stages {
+               stage('pre build') {
+            steps {
+                cleanWs()
+        }
                 
                 
         }
+		
+		}
+		
+		}
