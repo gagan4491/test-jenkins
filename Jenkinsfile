@@ -8,14 +8,9 @@ pipeline {
          
      }
     stages {
-                stage('build') {
-           
-                
-                
+               
         }
                 
                 
         }
     }
-}
-}
