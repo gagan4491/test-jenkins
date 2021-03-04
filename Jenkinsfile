@@ -9,7 +9,7 @@ pipeline {
 	    stage('echo') {
 		    steps {	    
 		             echo "Hello World"
-			    //echo "${params.Masspay-Test-Suite}" 
+			     echo "${params.'Masspay-Test-Suite'}" 
 		    }    
 	    }
 	    
