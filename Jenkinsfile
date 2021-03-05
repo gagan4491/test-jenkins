@@ -20,7 +20,14 @@ pipeline {
               script {
         def filename = "ad-123_file1.txt"   //filename will have the name of the file
         def JiraId = filename.split("_")     // JiraId will store the value that you could use at various stages 
-		println(filename)      
+		println(filename)   
+	    String a = "Hello-World";
+              String[] str;
+         str = a.split('-');
+      
+         for( String values : str )
+         println(values)	      
+		      
         }  
 	    }           
         }
