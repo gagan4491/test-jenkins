@@ -18,8 +18,8 @@ pipeline {
                 cleanWs()
         
               script {
-	def mp = echo "${params.'Masspay-Test-Suite'}" 
-	println(mp)	      
+	def mp = echo "${params.'Masspay-Test-Suite'}" as String[]
+	println(mp[1])	      
 	def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] 
         println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
