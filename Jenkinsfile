@@ -25,7 +25,7 @@ pipeline {
          for( String values : str )
          println(values)
 		      
-	def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] // You say that this is an array of String 
+	def birdArr = [${params.'Masspay-Test-Suite'}] as String[] // You say that this is an array of String 
         println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
 		      
