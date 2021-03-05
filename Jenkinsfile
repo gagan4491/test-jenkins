@@ -17,15 +17,9 @@ pipeline {
             steps {
                 cleanWs()
         
-              script { 
-	    String a = "Hello-World";
-              String[] str;
-         str = a.split('-');
-      
-         for( String values : str )
-         println(values)
+              script {
 		      
-	def birdArr = [${params.'Masspay-Test-Suite'}] as String[] // You say that this is an array of String 
+	def birdArr = [{params.'Masspay-Test-Suite'}] as String[] 
         println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
 		      
