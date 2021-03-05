@@ -23,8 +23,9 @@ pipeline {
        //String a = "Hello-World";
         String[] str;
       str = mp.split(','); 
-      for( String values : str )
-      println(values[1])		      
+	println(str)	      
+      //for(String values : str )
+      //println(values[1])		      
 	//def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] 
         //println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
