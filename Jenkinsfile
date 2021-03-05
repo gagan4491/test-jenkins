@@ -26,7 +26,7 @@ pipeline {
          println(values)
 		      
 	def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] // You say that this is an array of String 
-        println (birdArr) // [Parrot, Cockatiel, Pigeon]	      
+        println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
 		      
         }  
