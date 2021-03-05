@@ -19,7 +19,7 @@ pipeline {
         
               script {
 	def mp = echo "${params.'Masspay-Test-Suite'}" 
-	def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] 
+	def birdArr = [mp] as String[] 
         println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
 		      
