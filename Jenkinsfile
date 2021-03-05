@@ -15,7 +15,7 @@ pipeline {
 	def mp ="${params.'Masspay-Test-Suite'}"
         String[] str;
       str = mp.split(','); 
-	println(str[2])	 
+	println(str[1])	 
 		      
         }  
 	    }           
