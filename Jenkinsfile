@@ -16,9 +16,12 @@ pipeline {
                stage('build') {
             steps {
                 cleanWs()
-        }
-                
-                
+        
+              script {
+        def filename = "ad-123_file1.txt"    //filename will have the name of the file
+        def JiraId = filename.split("_")     // JiraId will store the value that you could use at various stages  
+        }  
+	    }           
         }
 		
 		}
