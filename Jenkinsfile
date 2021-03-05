@@ -19,10 +19,14 @@ pipeline {
         
               script {
 	def mp ="${params.'Masspay-Test-Suite'}"
-	println(mp)	      
-	def birdArr = ["mp"] as String[] 	      
+	//println(mp)	      
+       //String a = "Hello-World";
+        String[] str;
+      str = mp.split(','); 
+      for( String values : str )
+      println(values)		      
 	//def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] 
-        println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
+        //println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
 		      
         }  
