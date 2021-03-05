@@ -6,12 +6,6 @@ pipeline {
       }
     stages {	
 	    
-	    stage('echo') {
-		    steps {	    
-		             echo "Hello World"
-			     echo "${params.'Masspay-Test-Suite'}" 
-		    }    
-	    }
 	    
                stage('build') {
             steps {
