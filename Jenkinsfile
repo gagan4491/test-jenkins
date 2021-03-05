@@ -18,8 +18,8 @@ pipeline {
                 cleanWs()
         
               script {
-		      
-	def birdArr = [{params.'Masspay-Test-Suite'}] as String[] 
+	def mp-ts= ${params.'Masspay-Test-Suite'}
+	def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] 
         println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
 		      
