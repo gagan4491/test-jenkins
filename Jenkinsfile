@@ -1,5 +1,3 @@
-import jenkins.model.*
-jenkins = Jenkins.instance
 pipeline {
     agent { label 'master' }
     
@@ -20,7 +18,7 @@ pipeline {
                 cleanWs()
         
               script {
-	def mp = $params.'Masspay-Test-Suite'
+	def mp = echo "${params.'Masspay-Test-Suite'}" 
 	def birdArr = ["Parrot", "Cockatiel", "Pigeon"] as String[] 
         println (birdArr[1]) // [Parrot, Cockatiel, Pigeon]	      
 		      
