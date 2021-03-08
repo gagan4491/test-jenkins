@@ -1,5 +1,5 @@
 node {
     stage("Hello World") {
-        HelloWorld
+        HelloWorld("Gagan")
     }
 }
