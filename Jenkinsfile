@@ -1,5 +1,1 @@
-node {
-    stage("Hello World") {
-        HelloWorld("Gagan")
-    }
-}
+HelloWorld("Gagan")
